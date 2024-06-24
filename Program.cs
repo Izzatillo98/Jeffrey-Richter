@@ -1,7 +1,23 @@
-﻿int result = number1(1, 2);
-number1 (1 , 2);
-Console.WriteLine(result);
-static int number1 (int a , int b)
+﻿internal class Program
 {
-    return a + b;
+    private static void Main(string[] args)
+    {
+        ShowMessage("Hello");
+        int result = sum(1, 2);
+        ShowMessage(result);
+        
+    }
+    static int sum(int a, int b)
+        {
+            return a + b;
+        }
+        static void ShowMessage(int message)
+        {
+            Console.WriteLine(message);
+        }
+
+        static void ShowMessage(string message)
+        {
+            Console.WriteLine(message);
+        }
 }
